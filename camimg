@@ -1,0 +1,22 @@
+#only plug webcam USB
+ 
+ 
+#!/bin/bash
+cd /var/www/html/camimg
+ 
+a="0"
+i=0
+ 
+while true; do
+ 
+fswebcam "${a}.jpg"
+cp "${a}.jpg" lastimg.jpg
+let "a+=1"
+sleep 10
+ 
+if [ "$a" = "8641" ]; then
+let "a=0"
+ 
+fi
+ 
+done
