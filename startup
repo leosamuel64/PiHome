@@ -1,0 +1,7 @@
+#!/bin/bash
+ 
+sudo python3 mail.py
+sudo exec("python3 temperature.py")
+ 
+cd camimg
+sudo bash cam
