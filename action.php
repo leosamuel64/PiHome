@@ -1,6 +1,3 @@
-//By Leo SAMUEL
-//Contact : leosamuel@laposte.net
- 
 <?php
 require_once('common.php');
  
